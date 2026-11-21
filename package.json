@@ -1,0 +1,19 @@
+{
+  "name": "geofield-android",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Offline geological field notebook",
+  "scripts": {
+    "build": "esbuild www/native.js --bundle --format=esm --outfile=www/native.bundle.js && cap sync android"
+  },
+  "dependencies": {
+    "@capacitor/android": "^7.4.0",
+    "@capacitor/core": "^7.4.0",
+    "@capacitor/filesystem": "^7.1.4",
+    "@capacitor/share": "^7.0.2"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^7.4.0",
+    "esbuild": "^0.25.0"
+  }
+}
