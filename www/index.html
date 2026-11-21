@@ -124,4 +124,7 @@ $('exportBtn').onclick=async()=>{
 $('backupBtn').onclick=async()=>{if(!records.length){alert('اطلاعاتی برای پشتیبان‌گیری وجود ندارد.');return;}const blob=new Blob([JSON.stringify(records,null,2)],{type:'application/json;charset=utf-8'});if(window.nativeSaveFile){await window.nativeSaveFile(blob,'GeoField_Backup.json','application/json');return;}const url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='GeoField_Backup.json';a.click();URL.revokeObjectURL(url);};
 load();
 </script>
+ <script type="module" src="./native.bundle.js"></script>
+</body>
+</html>
 </body></html>
