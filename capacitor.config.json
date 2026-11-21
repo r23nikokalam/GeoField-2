@@ -1,0 +1,6 @@
+{
+  "appId": "com.geofield.fieldnotebook",
+  "appName": "GeoField",
+  "webDir": "www",
+  "bundledWebRuntime": false
+}
